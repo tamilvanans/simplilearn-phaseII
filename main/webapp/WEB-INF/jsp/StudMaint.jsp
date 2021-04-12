@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<jsp:include page="Header.jsp" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/SchoolApp/SubmitStudent" method="post"> 
+<form action="${fu}SubmitStudent" method="post"> 
 Students
 	<select id="StudentStaffList" name="student">
 		<c:forEach items="${Students}" var="student">

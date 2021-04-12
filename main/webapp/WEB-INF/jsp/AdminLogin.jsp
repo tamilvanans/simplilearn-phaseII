@@ -1,14 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+ <jsp:include page="Header.jsp" />
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Administrator Login</title>
-<h1>Welcome Admin to Learner's Academy</h1>
+<h1>Welcome Admin to Learner's Academyassaa</h1>
 </head>
+
 <body>
-<form action="/SchoolApp/ValidLogin" method="post">
+<form action="${fu}ValidLogin" method="post">
 User Name: <input type="text" name="username" />
 <br />
 <br />

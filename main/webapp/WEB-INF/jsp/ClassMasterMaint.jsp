@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<jsp:include page="Header.jsp" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/SchoolApp/mastClassMaint" method="get">
+<form action="${fu}mastClassMaint" method="get">
 <c:catch var="exception">${ClassData.classId}</c:catch>
 <c:choose>
 <c:when test="${not empty exception}">
